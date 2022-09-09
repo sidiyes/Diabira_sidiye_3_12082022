@@ -1,0 +1,24 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 25px 40px 25px;
+    background-color: #353535;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .footer__title {
+        color: $FourthColor;
+        font-family: Shrikhand,"cursive";
+        font-size: 18px;
+        }
+    .footer__link {
+            color: $FourthColor;
+            text-decoration: none;
+        }
+    .footer__icon {
+            font-size: 12px;
+            margin-right: 5px;
+        }
+}
