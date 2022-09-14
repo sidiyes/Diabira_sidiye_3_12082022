@@ -1,0 +1,208 @@
+.cover {
+  width: 100%;
+  height: 260px;
+  position: relative;
+  object-fit: cover;
+}
+.news-card {
+  position: absolute;
+  padding: 6px;
+  font-size: 14px;
+  border-radius: 3px;
+  color: #195e4ddf;
+  font-weight: 500;
+  background-color: $ThirdColor;
+  right: 15px;
+  top: 15px;
+}
+
+.menu {
+  background-color: $Background;
+  padding: 0 5% 100px 5%;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  margin-top: -35px;
+  position: relative;
+  &__header {
+      display: flex;
+      padding-top: 30px;
+      &__title {
+          width: 90%;
+          font-family: Shrikhand,"cursive";
+          font-size: 22px;
+      }
+      &__icon {
+        display: flex;
+        align-items: center;
+        i {
+            font-size: 23px;
+            cursor: pointer;
+        }
+        .fa-solid::before {
+         display: none;
+        }
+  }
+}
+}
+
+.menu__header__icon:hover {
+  .fa-solid::before {
+      display: block;
+      color: $FirstColor;
+      animation: HeartAnim 1s;
+      }
+      .fa-regular::before {
+        display: none;
+        }
+}
+
+.menu-wrap__elt {
+  padding-top: 20px;
+  &__title {
+      font-weight: 400;
+      &::after {
+          content: "";
+          display: flex;
+          position: absolute;
+          background-color: $ThirdColor;   
+          width: 45px;
+          height: 2.5px;
+          margin-top: 2px;
+      }
+  }
+}
+
+.menu__item {
+  background-color: $FourthColor;
+  border-radius: 15px;
+  margin: 15px 0;
+  display: flex;
+  box-shadow: 0 0 10px rgb(0 0 0 / 25%);
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+  animation-timing-function: linear;
+  &__dish {
+    width: 85%;
+    padding: 15px 5px 15px 15px;
+    overflow: hidden;
+    &__title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &__subtitle {
+      font-size: 15px;
+      font-weight: 300;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+  }
+  &__price {
+    width: 15%;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px 0;
+    font-weight: 600;
+  }
+  &__check {
+    width: 70px;
+    text-align: center;
+    background-color: $ThirdColor;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -70px;
+    i {
+        background-color: $FourthColor;
+        padding: 3px;
+        border-radius: 100%;
+        color: $ThirdColor;
+        transform: rotate(180deg);
+    }
+  } 
+}
+
+.menu__item:hover {
+  .menu__item__check {
+      margin-right: 0;
+      transition-duration: 1s;
+  }
+}
+.menu__item:hover {
+  i {
+      transform: rotate(0);
+      transition-duration: 1s;
+  }
+}
+
+.item1 {
+  animation: itemAnim 0.4s;
+  animation-fill-mode: both;
+}
+.item2 {
+  animation: itemAnim 0.4s;
+  animation-fill-mode: both;
+  animation-delay: .1s;
+}
+.item3 {
+  animation: itemAnim 0.4s;
+  animation-fill-mode: both;
+  animation-delay: .2s;
+}
+.item4 {
+  animation: itemAnim .4s;
+  animation-fill-mode: both;
+  animation-delay: .3s;
+}
+.item5 {
+  animation: itemAnim .3s;
+  animation-fill-mode: both;
+  animation-delay: .4s;
+}
+.item6 {
+  animation: itemAnim .4s;
+  animation-fill-mode: both;
+  animation-delay: .5s;
+}
+.item7 {
+  animation: itemAnim .4s;
+  animation-fill-mode: both;
+  animation-delay: .6s;
+}
+.item8 {
+  animation: itemAnim .4s;
+  animation-fill-mode: both;
+  animation-delay: .7s;
+}
+.item9 {
+  animation: itemAnim .4s;
+  animation-fill-mode: both;
+  animation-delay: .8s;
+}
+.item10 {
+  animation: itemAnim .4s;
+  animation-fill-mode: both;
+  animation-delay: .9s;
+}
+
+.order {
+  text-align: center;
+  margin-top: 50px;
+&__button {
+  background: linear-gradient(#FF79DA,#9356DC);
+  font-size: 14px;
+  text-decoration: none;
+  color: $FourthColor;
+  font-weight: 400;
+  padding: 14px 40px;
+  border-radius: 100px;
+  box-shadow: -1px 1px 6px 5px rgba(0,0,0,0.07);
+  &:hover {
+      opacity: 0.75;
+      transition-duration: 1s;
+      box-shadow: -1px 2px 4px 1px rgba(0,0,0,0.5);
+  }
+}
+}

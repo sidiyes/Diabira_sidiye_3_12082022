@@ -22,10 +22,9 @@
       referrerpolicy="no-referrer"
     />
   </head>
-</html>
 <body>
   <header>
-    <a class="arrow" href="index.html"
+    <a class="arrow" href="../index.html"
       ><i class="fa-solid fa-arrow-left"></i
     ></a>
     <h1 class="header__logo">ohmyfood</h1>
@@ -38,17 +37,17 @@
   <div class="menu">
     <div class="menu__header">
       <div class="menu__header__title">La palette du goût</div>
-      <button class="menu__header__icon">
+      <div class="menu__header__icon">
         <i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i>
-      </button>
+      </div>
     </div>
     <div class="menu-wrap">
-      <section class="entrées">
-        <h4 class="menu__title">ENTRÉES</h4>
+      <section class="menu-wrap__elt">
+        <h4 class="menu-wrap__elt__title">ENTRÉES</h4>
         <div class="menu__item item1">
           <article class="menu__item__dish">
-            <h3 class="menu__item__title">Fricassée d'escargot</h3>
-            <p class="menu__item__subtitle">Au piment d'espelette</p>
+            <h3 class="menu__item__dish__title">Fricassée d'escargot</h3>
+            <p class="menu__item__dish__subtitle">Au piment d'espelette</p>
           </article>
           <div class="menu__item__price">25€</div>
           <div class="menu__item__check">
@@ -60,8 +59,8 @@
 
         <div class="menu__item item2">
           <article class="menu__item__dish">
-            <h3 class="menu__item__title">Foie gras de canard mi-cuit</h3>
-            <p class="menu__item__subtitle">Et ses copeaux de truffe noire</p>
+            <h3 class="menu__item__dish__title">Foie gras de canard mi-cuit</h3>
+            <p class="menu__item__dish__subtitle">Et ses copeaux de truffe noire</p>
           </article>
           <div class="menu__item__price">35€</div>
           <div class="menu__item__check">
@@ -73,8 +72,8 @@
 
         <div class="menu__item item3">
           <article class="menu__item__dish">
-            <h3 class="menu__item__title">Oeuf au plat</h3>
-            <p class="menu__item__subtitle">
+            <h3 class="menu__item__dish__title">Oeuf au plat</h3>
+            <p class="menu__item__dish__subtitle">
               Assaisonné à la truffe sur lit de poireaux
             </p>
           </article>
@@ -86,12 +85,12 @@
           </div>
         </div>
       </section>
-      <section class="plats">
-        <h4 class="menu__title">PLATS</h4>
+      <section class="menu-wrap__elt">
+        <h4 class="menu-wrap__elt__title">PLATS</h4>
         <div class="menu__item item4">
           <article class="menu__item__dish">
-            <h3 class="menu__item__title">Filet de boeuf aux herbes</h3>
-            <p class="menu__item__subtitle">
+            <h3 class="menu__item__dish__title">Filet de boeuf aux herbes</h3>
+            <p class="menu__item__dish__subtitle">
               Accompagné de sa ribambelle de légumes
             </p>
           </article>
@@ -105,8 +104,8 @@
 
         <div class="menu__item item5">
           <article class="menu__item__dish">
-            <h3 class="menu__item__title">Parmentier de queue de boeuf</h3>
-            <p class="menu__item__subtitle">
+            <h3 class="menu__item__dish__title">Parmentier de queue de boeuf</h3>
+            <p class="menu__item__dish__subtitle">
               A la truffe noire sur sa purée de panais
             </p>
           </article>
@@ -119,8 +118,8 @@
         </div>
         <div class="menu__item item6">
           <article class="menu__item__dish">
-            <h3 class="menu__item__title">Filet de Turbot</h3>
-            <p class="menu__item__subtitle">Aux agrumes</p>
+            <h3 class="menu__item__dish__title">Filet de Turbot</h3>
+            <p class="menu__item__dish__subtitle">Aux agrumes</p>
           </article>
           <div class="menu__item__price">44€</div>
           <div class="menu__item__check">
@@ -131,12 +130,12 @@
         </div>
       </section>
 
-      <section class="desserts">
-        <h4 class="menu__title">DESSERTS</h4>
+      <section class="menu-wrap__elt">
+        <h4 class="menu-wrap__elt__title">DESSERTS</h4>
         <div class="menu__item item7">
           <article class="menu__item__dish">
-            <h3 class="menu__item__title">Paris-Brest</h3>
-            <p class="menu__item__subtitle">Revisité</p>
+            <h3 class="menu__item__dish__title">Paris-Brest</h3>
+            <p class="menu__item__dish__subtitle">Revisité</p>
           </article>
           <div class="menu__item__price">18€</div>
           <div class="menu__item__check">
@@ -148,8 +147,8 @@
 
         <div class="menu__item item8">
           <article class="menu__item__dish">
-            <h3 class="menu__item__title">Macaron au chocolat d'exception</h3>
-            <p class="menu__item__subtitle">
+            <h3 class="menu__item__dish__title">Macaron au chocolat d'exception</h3>
+            <p class="menu__item__dish__subtitle">
               Et glace à la vanille de Madagascar
             </p>
           </article>
@@ -163,8 +162,8 @@
 
         <div class="menu__item item9">
           <article class="menu__item__dish">
-            <h3 class="menu__item__title">Mousse au chocolat</h3>
-            <p class="menu__item__subtitle">
+            <h3 class="menu__item__dish__title">Mousse au chocolat</h3>
+            <p class="menu__item__dish__subtitle">
               Au piment d'espelette et à la truffe noire
             </p>
           </article>
@@ -201,10 +200,11 @@
         >
       </li>
       <li class="footer__list__item">
-        <a class="footer__link" href="#"
+        <a class="footer__link" href="mailto:sidiyes@protonmail.com"
           ><span class="footer__link__text">Contact</span></a
         >
       </li>
     </ul>
   </footer>
 </body>
+</html>
